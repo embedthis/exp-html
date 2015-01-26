@@ -1,18 +1,16 @@
 {
-    "name": "exp-js",
-    "description": "Js Plugin for Expansive",
-    "version": "1.1.9",
+    "name": "exp-html",
+    "description": "HTML Minifier Plugin for Expansive",
+    "version": "0.1.0",
     "keywords": [
         "expansive-plugin",
-        "js"
+        "html"
     ],
     "licenses": "GPL",
-    "ignore": [
-        "**/test/**",
-        "**/tests/**",
-        "**/benchmark/**"
-    ],
-    "engines": {
-        "node": ">= 0.4.0"
-    }
+    "scripts": {
+        "postcache": {
+            "script": "Cmd.locate('html-minifier') || run('npm install -g html-minifier')"
+        }
+    },
+    "install": false
 }

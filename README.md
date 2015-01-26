@@ -1,14 +1,34 @@
-exp-js
+exp-html
 ===
 
-Expansive plugin for Javascript files.
+Expansive plugin for the HTML minifier.
 
-Provides the 'minify-js' service.
+Provides the 'minify-html' service.
 
 ### To install:
 
-exp install js
+    pak install exp-html
+
+### To configure in expansive.json:
+
+* minify-html.enable -- Enable the minify-html service to post-process HTML files.
+* minify-html.options -- Command line options to html-minifier
+
+```
+{
+    services: {
+        'minify-html': {
+            enable: true,
+            options: '--remove-comments \
+                      --conservative-collapse \
+                      --remove-attribute-quotes \
+                      --remove-empty-attributes \
+                      --remove- optional-tags'
+        }
+    }
+}
+```
 
 ### Get Pak from
 
-[https://github.com/embedthis/pak](https://github.com/embedthis/pak)
+[https://embedthis.com/pak/](https://embedthis.com/pak/download.html)
