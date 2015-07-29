@@ -1,8 +1,7 @@
 Expansive.load({
     transforms: {
         name:       'minify-html',
-        input:      'html',
-        output:     'html',
+        mappings:   'html',
         options:    '--remove-comments --conservative-collapse --remove-attribute-quotes --remove-empty-attributes --remove-optional-tags'
         script: `
             function transform(contents, meta, service) {
