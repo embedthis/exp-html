@@ -1,7 +1,7 @@
 {
     "name": "exp-html",
     "description": "HTML Minifier Plugin for Expansive",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "keywords": [
         "expansive-plugin",
         "html"
@@ -12,14 +12,13 @@
         "url": "git://github.com/embedthis/exp-html.git"
     },
     "devDependencies": {
-        "expansive": ">=0.7.0",
-        "pak": ">=0.11.3"
+        "expansive": ">=1.0.0",
+        "pak": ">=1.0.0"
     },
-    "pak": {
-        "scripts": {
-            "postcache": {
-                "script": "npm('install -g', 'html-minifier')"
-            }
+    "scripts": {
+        "postcache": {
+            "script": "npm('install -g', 'html-minifier')"
         }
-    }
+    },
+    "origin": "embedthis/exp-html"
 }
