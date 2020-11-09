@@ -2,7 +2,8 @@ Expansive.load({
 
     services: {
         name:       'html',
-        options:    '--remove-comments --collapse-whitespace --prevent-attributes-escaping --remove-empty-attributes --remove-optional-tags'
+        _options:   '--remove-comments',
+        options:    '--collapse-whitespace --prevent-attributes-escaping --remove-empty-attributes --remove-optional-tags'
 
         transforms: {
             mappings:   ['html'],
